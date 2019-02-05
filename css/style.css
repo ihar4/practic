@@ -417,6 +417,90 @@ template {
   font-family: 20px;
 }
 
+.main {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+.main-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.main-text__title {
+  margin-top: 20px;
+  font-size: 41px;
+  line-height: 55px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  margin-bottom: 50px;
+}
+
+.main-text__title span {
+  font-size: 20px;
+  display: block;
+  margin-top: 20px;
+}
+
+.main-image {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.main-advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 350px;
+}
+
+.main-advantages__img {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ffd200;
+  margin-right: 30px;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-advantages__img-1 {
+  background-image: url("../img/main/clock.png");
+}
+
+.main-advantages__img-2 {
+  background-image: url("../img/main/calculator.png");
+}
+
+.main-advantages__img-3 {
+  background-image: url("../img/main/paint-board.png");
+}
+
+.main-advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.main-advantages__text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
 body {
   font-family: 'Museo Sans Light', sans-serif;
   color: #333333;
@@ -425,5 +509,9 @@ body {
 .container {
   width: 1170px;
   margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
