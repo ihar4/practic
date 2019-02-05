@@ -376,6 +376,13 @@ template {
   outline: none;
 }
 
+.input {
+  font-size: 15px;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+}
+
 .header-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,7 +421,7 @@ template {
   text-decoration: none;
   color: #333333;
   font-family: 'Museo Sans Bold', sans-serif;
-  font-family: 20px;
+  font-size: 20px;
 }
 
 .main {
@@ -434,11 +441,11 @@ template {
 }
 
 .main-text__title {
-  margin-top: 20px;
   font-size: 41px;
   line-height: 55px;
+  margin-top: 20px;
   font-family: 'Museo Sans Bold', sans-serif;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .main-text__title span {
@@ -460,7 +467,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 350px;
+  max-width: 400px;
 }
 
 .main-advantages__img {
@@ -496,9 +503,102 @@ template {
   margin-bottom: 30px;
 }
 
-.main-advantages__text {
-  font-size: 14px;
+.feedback {
+  padding: 94px 0;
+  background: url("../img/feedback/feedback-bg.jpg") no-repeat;
+  background-size: 40%;
+  background-position: center right;
+}
+
+.form {
+  max-width: 575px;
+}
+
+.form__title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 35px;
+  margin-bottom: 45px;
+}
+
+.form__subtitle {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.form__input {
+  width: 270px;
+  margin-bottom: 30px;
+}
+
+.form__input:first-child {
+  margin-right: 30px;
+}
+
+.form__button {
+  padding: 28px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.callback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 575px;
+}
+
+.callback__text {
+  max-width: 205px;
   line-height: 24px;
+  font-size: 15px;
+}
+
+.callback__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 24px;
+}
+
+.callback__img {
+  margin-right: 20px;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/feedback/phone-receiver.png");
+}
+
+.callback__phone {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  font-size: 15px;
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.callback span {
+  font-size: 15px;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
