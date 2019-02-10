@@ -1,0 +1,107 @@
+.modal
+ display: none
+ position: fixed
+ width: 100%
+ height: 100%
+ background-color: rgba(#000, 0.52)
+ left: 0
+ top: 0
+ z-index: 99
+ &__button
+  margin-top: 10px
+ &-form
+  text-align: center 
+  width: 375px
+  &__input
+   width: 370px
+   margin-bottom: 20px
+  &__phone
+   font-size: 24px
+   &-text
+    display: block
+    +light
+    font-size: 15px
+    line-height: 20px
+    width: 275px
+    margin-bottom: 18px
+    margin: auto
+  &__title
+   display: block
+   +bold
+   font-size: 22px
+   line-height: 33px
+   margin: 0 0 60px 0
+   padding: 0
+  &__subtitle
+   display: block
+   +light
+   font-size: 16px 
+   margin-bottom: 50px
+ &_visible
+  display: flex
+ &__dialog
+  width: 1170px
+  padding: 80px 100px 80px 80px
+  height: auto
+  background-color: #fff
+  margin: auto
+  display: flex
+  justify-content: space-between
+  position: relative
+ &__close
+  position: absolute
+  top: 15px
+  right: 15px 
+  &:hover
+   cursor: pointer
+ &-price
+  h4
+   +bold
+   font-size: 14px
+   margin: 35px 0 26px 0
+  ul
+   margin: 0
+   padding: 0 
+  li
+   margin: 0
+   padding: 0
+   list-style-type: none
+   font-size: 14px
+   +light
+   line-height: 25px
+   &:before
+    content: "\2022"  
+    font-size: 27px
+    margin-right: 13px 
+    color: $primary_color
+  display: flex
+  flex-direction: column  
+  width: 410px
+  color: #000
+  &__img
+   margin-right: 18px
+  &__title
+   margin: 0
+  &__line
+   width: 42px
+   height: 2px
+   background-color: $primary_color
+   margin: 11px 0
+  &__item
+   display: flex
+   margin-bottom: 16px
+   align-items: center
+   p 
+    margin: 0
+    padding-bottom: 3px
+  &__title
+   font-size: 16px
+   +medium   
+  &__cost
+   font-size: 16px
+   +light
+   span
+    +bold
+
+
+  

@@ -608,6 +608,175 @@ template {
   font-size: 15px;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.modal__button {
+  margin-top: 10px;
+}
+
+.modal-form {
+  text-align: center;
+  width: 375px;
+}
+
+.modal-form__input {
+  width: 370px;
+  margin-bottom: 20px;
+}
+
+.modal-form__phone {
+  font-size: 24px;
+}
+
+.modal-form__phone-text {
+  display: block;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  width: 275px;
+  margin-bottom: 18px;
+  margin: auto;
+}
+
+.modal-form__title {
+  display: block;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 22px;
+  line-height: 33px;
+  margin: 0 0 60px 0;
+  padding: 0;
+}
+
+.modal-form__subtitle {
+  display: block;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.modal_visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal__dialog {
+  width: 1170px;
+  padding: 80px 100px 80px 80px;
+  height: auto;
+  background-color: #fff;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.modal__close:hover {
+  cursor: pointer;
+}
+
+.modal-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 410px;
+  color: #000;
+}
+
+.modal-price h4 {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 14px;
+  margin: 35px 0 26px 0;
+}
+
+.modal-price ul {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-price li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 14px;
+  font-family: 'Museo Sans Light', sans-serif;
+  line-height: 25px;
+}
+
+.modal-price li:before {
+  content: "\2022";
+  font-size: 27px;
+  margin-right: 13px;
+  color: #ffd200;
+}
+
+.modal-price__img {
+  margin-right: 18px;
+}
+
+.modal-price__title {
+  margin: 0;
+}
+
+.modal-price__line {
+  width: 42px;
+  height: 2px;
+  background-color: #ffd200;
+  margin: 11px 0;
+}
+
+.modal-price__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-price__item p {
+  margin: 0;
+  padding-bottom: 3px;
+}
+
+.modal-price__title {
+  font-size: 16px;
+  font-family: 'Museo Sans Medium', sans-serif;
+}
+
+.modal-price__cost {
+  font-size: 16px;
+  font-family: 'Museo Sans Light', sans-serif;
+}
+
+.modal-price__cost span {
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -631,6 +800,9 @@ img {
   .container {
     width: 970px;
   }
+  .modal__dialog {
+    width: 920px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -643,6 +815,32 @@ img {
   }
   .feedback {
     background: #fff;
+  }
+  .modal-price {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .modal__dialog {
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .modal-form {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 20px;
+  }
+  .modal-form__title {
+    display: none;
+  }
+  .modal-form__subtitle {
+    margin-top: 20px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    padding: 0;
   }
 }
 
@@ -665,6 +863,23 @@ img {
   }
   .main-text__title {
     text-align: center;
+  }
+  .modal-price {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .modal-form {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .modal-form__phone {
+    font-size: 14px;
+  }
+  .modal__dialog {
+    padding: 20px;
+    width: auto;
   }
 }
 
