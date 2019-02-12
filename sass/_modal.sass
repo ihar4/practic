@@ -7,6 +7,26 @@
  left: 0
  top: 0
  z-index: 99
+ &-slider
+  min-height: 290px
+  &__text
+   padding-top: 40px
+   +light
+   font-size: 20px
+ &-arrow
+  position: absolute
+  height: 32px
+  width: 32px
+  top: 50%
+  z-index: 50
+  &:hover
+   cursor: pointer
+  &_right
+   left: 100%
+   transform: translateX(-32px)
+   background: url("../img/modal-arrow-right.png") no-repeat center
+  &_left 
+   background: url("../img/modal-arrow-left.png") no-repeat center
  &__button
   margin-top: 10px
  &-form
@@ -24,7 +44,8 @@
     line-height: 20px
     width: 275px
     margin-bottom: 18px
-    margin: auto
+    margin-right: auto
+    margin-left: auto
   &__title
    display: block
    +bold
@@ -75,7 +96,7 @@
     color: $primary_color
   display: flex
   flex-direction: column  
-  width: 410px
+  width: 440px
   color: #000
   &__img
    margin-right: 18px
