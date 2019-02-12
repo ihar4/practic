@@ -3,6 +3,11 @@
   width: 970px
  .modal__dialog
   width: 920px 
+ .slider
+  &-item
+   img
+    max-width: 95%
+
 
 @media (max-width: 992px)
  .container
@@ -13,7 +18,8 @@
     font-size: 30px
     line-height: 36px
  .feedback
-  background: #fff     
+  background: #fff  
+  padding: 40px 0   
  .modal
   &-price
    order: 0
@@ -29,6 +35,14 @@
     margin-top: 20px
     +bold
     padding: 0 
+ .section
+  &-title   
+   font-size: 24px
+   line-height: 35px
+ .portfolio
+  padding: 40px 0 
+ .slider
+  margin-top: 20px   
     
 
 @media (max-width: 768px)
@@ -54,6 +68,10 @@
   &__dialog
    padding: 20px
    width: auto
+ .section
+   &-title   
+    font-size: 18px
+    line-height: 28px   
      
 
 @media (max-width: 576px)
@@ -97,5 +115,10 @@
    padding-bottom: 10px
   &__img
    margin-right: 5px
-
-
+ .slider
+  .arrow
+   bottom: -30px
+   &_left
+    background-size: 50%  
+   &_right
+    background-size: 50%  
