@@ -470,6 +470,10 @@ template {
   max-width: 400px;
 }
 
+.main-advantages__text {
+  font-size: 14px;
+}
+
 .main-advantages__img {
   min-width: 40px;
   height: 40px;
@@ -504,7 +508,7 @@ template {
 }
 
 .feedback {
-  padding: 94px 0;
+  padding: 80px 0;
   background: url("../img/feedback/feedback-bg.jpg") no-repeat center left 845px;
   background-size: contain;
   position: relative;
@@ -534,6 +538,7 @@ template {
 }
 
 .form__subtitle {
+  font-size: 16px;
   display: block;
   margin-bottom: 50px;
 }
@@ -552,7 +557,7 @@ template {
   display: block;
   width: 100%;
   font-size: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .callback {
@@ -620,11 +625,12 @@ template {
 }
 
 .modal-slider {
+  padding-top: 5px;
   min-height: 290px;
 }
 
 .modal-slider__text {
-  padding-top: 40px;
+  padding-top: 28px;
   font-family: 'Museo Sans Light', sans-serif;
   font-size: 20px;
 }
@@ -643,17 +649,21 @@ template {
 
 .modal-arrow_right {
   left: 100%;
-  -webkit-transform: translateX(-32px);
-          transform: translateX(-32px);
-  background: url("../img/modal-arrow-right.png") no-repeat center;
+  -webkit-transform: translate(-32px, -18px);
+          transform: translate(-32px, -18px);
+  background-image: url("../img/modal-arrow-right.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .modal-arrow_left {
-  background: url("../img/modal-arrow-left.png") no-repeat center;
-}
-
-.modal__button {
-  margin-top: 10px;
+  -webkit-transform: translateY(-18px);
+          transform: translateY(-18px);
+  background-image: url("../img/modal-arrow-left.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .modal-form {
@@ -663,7 +673,7 @@ template {
 
 .modal-form__input {
   width: 370px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .modal-form__phone {
@@ -676,7 +686,7 @@ template {
   font-size: 15px;
   line-height: 20px;
   width: 275px;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -686,7 +696,7 @@ template {
   font-family: 'Museo Sans Bold', sans-serif;
   font-size: 22px;
   line-height: 33px;
-  margin: 0 0 60px 0;
+  margin: 0 0 47px 0;
 }
 
 .modal-form__subtitle {
@@ -704,7 +714,7 @@ template {
 
 .modal__dialog {
   width: 1170px;
-  padding: 80px 100px 80px 80px;
+  padding: 75px 95px 80px 80px;
   height: auto;
   background-color: #fff;
   margin: auto;
@@ -816,7 +826,7 @@ template {
 }
 
 .slider {
-  margin-top: 80px;
+  margin-top: 95px;
 }
 
 .slider-item {
@@ -831,7 +841,7 @@ template {
   width: 45px;
   height: 19px;
   position: absolute;
-  bottom: -68px;
+  bottom: -83px;
 }
 
 .slider .arrow:hover {
@@ -856,7 +866,11 @@ template {
 }
 
 .price {
-  padding-top: 285px;
+  padding-top: 175px;
+}
+
+.price h2 {
+  color: #000;
 }
 
 .price-wrap {
@@ -885,14 +899,15 @@ template {
 
 .price-item__title {
   display: block;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
+  color: #000;
   font-family: 'Museo Sans Light', sans-serif;
   font-size: 18px;
   text-align: center;
 }
 
 .price-item__img {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   position: relative;
 }
 
@@ -919,6 +934,252 @@ template {
   font-family: 'Museo Sans Bold', sans-serif;
   font-size: 16px;
   color: #333333;
+}
+
+.steps {
+  padding: 120px 0 100px 0;
+}
+
+.steps-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 35px;
+}
+
+.steps-item {
+  width: 155px;
+  height: 175px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.steps__img {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #ffd200;
+  border-radius: 50%;
+}
+
+.steps__img-1 {
+  background-image: url(../img/steps/step-1.png);
+}
+
+.steps__img-2 {
+  background-image: url(../img/steps/step-2.png);
+}
+
+.steps__img-3 {
+  background-image: url(../img/steps/step-3.png);
+}
+
+.steps__img-4 {
+  background-image: url(../img/steps/step-4.png);
+}
+
+.steps__img-5 {
+  background-image: url(../img/steps/step-5.png);
+}
+
+.steps__text {
+  margin-top: 30px;
+  display: block;
+  line-height: 20px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.steps-arrow {
+  width: 72px;
+  height: 185px;
+  background-image: url(../img/steps/step-arrow.png);
+  background-repeat: no-repeat;
+}
+
+.orrange {
+  background-color: #ffd200;
+  padding: 100px 0;
+  margin-bottom: 105px;
+}
+
+.orrange__text {
+  margin: 0;
+  text-align: center;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-size: 32px;
+  line-height: 50px;
+  color: #000;
+}
+
+.benefits {
+  padding-bottom: 130px;
+}
+
+.benefits-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.benefits-item {
+  background-color: #f5f5f5;
+}
+
+.benefits-item__text {
+  margin-left: 25px;
+  padding-bottom: 35px;
+  width: 290px;
+  font-size: 16px;
+  line-height: 23px;
+  font-family: 'Museo Sans Light', sans-serif;
+}
+
+.benefits-item__text_bold {
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.guaranty {
+  color: #000;
+}
+
+.guaranty-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.guaranty-item {
+  padding: 90px 0 205px 0;
+}
+
+.guaranty-item__text {
+  padding-top: 15px;
+  text-align: center;
+  width: 280px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Museo Sans Light', sans-serif;
+}
+
+.order {
+  background: -webkit-gradient(linear, left top, right top, color-stop(2%, #f5f5f5), color-stop(2%, #ffd200), color-stop(56%, #ffd200), color-stop(56%, #f5f5f5), to(#f5f5f5));
+  background: linear-gradient(to right, #f5f5f5 2%, #ffd200 2%, #ffd200 56%, #f5f5f5 56%, #f5f5f5 100%);
+  color: #000;
+  padding-bottom: 90px;
+  padding-top: 50px;
+  margin-bottom: 200px;
+}
+
+.order__button {
+  margin-top: 15px;
+  margin-bottom: 28px;
+}
+
+.order-questions {
+  margin-right: 285px;
+}
+
+.order-form {
+  color: #333333;
+  width: 370px;
+  text-align: center;
+}
+
+.order-form__input {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.order-form__title {
+  font-size: 22px;
+  line-height: 33px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  margin-bottom: 45px;
+}
+
+.order-form__subtitle {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 48px;
+}
+
+.order-form__bottom-text {
+  font-size: 15px;
+}
+
+.order-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.order-title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 45px;
+}
+
+.order-subtitle {
+  display: block;
+  font-size: 16px;
+  font-family: 'Museo Sans Light', sans-serif;
+  margin-bottom: 100px;
+}
+
+.order-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 470px;
+}
+
+.order-list__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.order-list__item {
+  font-size: 18px;
+  font-family: 'Museo Sans Medium', sans-serif;
+  display: block;
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+.order-list__number {
+  display: block;
+  padding-left: 10px;
+  padding-top: 6px;
+  height: 35px;
+  min-width: 35px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  font-family: 'Museo Sans Bold', sans-serif;
+  margin-right: 45px;
 }
 
 *, *:before, *:after {
@@ -956,7 +1217,7 @@ img {
   font-size: 20px;
   font-family: 'Museo Sans Light', sans-serif;
   text-align: center;
-  margin: 60px 0;
+  margin: 50px 0 57px 0;
 }
 
 @media (max-width: 1200px) {

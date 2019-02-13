@@ -8,9 +8,10 @@
  top: 0
  z-index: 99
  &-slider
+  padding-top: 5px
   min-height: 290px
   &__text
-   padding-top: 40px
+   padding-top: 28px
    +light
    font-size: 20px
  &-arrow
@@ -23,18 +24,25 @@
    cursor: pointer
   &_right
    left: 100%
-   transform: translateX(-32px)
-   background: url("../img/modal-arrow-right.png") no-repeat center
+   transform: translate(-32px,-18px)
+   background-image: url("../img/modal-arrow-right.png") 
+   background-repeat: no-repeat
+   background-position: center
+   background-color: rgba(#fff,0.7)
   &_left 
-   background: url("../img/modal-arrow-left.png") no-repeat center
+   transform: translateY(-18px) 
+   background-image: url("../img/modal-arrow-left.png") 
+   background-repeat: no-repeat
+   background-position: center
+   background-color: rgba(#fff,0.7)
  &__button
-  margin-top: 10px
+  
  &-form
   text-align: center 
   width: 375px
   &__input
    width: 370px
-   margin-bottom: 20px
+   margin-bottom: 16px
   &__phone
    font-size: 24px
    &-text
@@ -43,7 +51,7 @@
     font-size: 15px
     line-height: 20px
     width: 275px
-    margin-bottom: 18px
+    margin-bottom: 8px
     margin-right: auto
     margin-left: auto
   &__title
@@ -51,7 +59,7 @@
    +bold
    font-size: 22px
    line-height: 33px
-   margin: 0 0 60px 0
+   margin: 0 0 47px 0
   &__subtitle
    display: block
    +light
@@ -61,7 +69,7 @@
   display: flex
  &__dialog
   width: 1170px
-  padding: 80px 100px 80px 80px
+  padding: 75px 95px 80px 80px
   height: auto
   background-color: #fff
   margin: auto
